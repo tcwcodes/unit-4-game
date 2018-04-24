@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-var charPicked;
-
 var mario = {
     name: "mario",
     display: "Mario",
@@ -42,20 +40,12 @@ var characters = [mario, luigi, peach, yoshi];
 
 $("#start-button").on("click", function(){
     for (var i = 0; i < characters.length; i++) {
-    $("#charDiv").append('<img src=' + characters[i].image + '>');
-    $("#charDiv").addClass("floatChar");
+    var character = $("<div>");
+    character.addClass("ppls");
+    character.append('<img src=' + characters[i].image + '>');
+    $("#charDiv").append(character);
 };
 
-    // $("#charDiv").append('<img src="assets/images/mario.png"/>');
-    // $("#charDiv").('<img src="'+ mario.image + '" class="image"')
-    // $("#charDiv").append("hi!");
 });
-
-// function newCharDiv() {
-// var newCharDiv = "hi!";
-// $("#charDiv").append("hi!");
-// };
-
-// newCharDiv();
 
 });
