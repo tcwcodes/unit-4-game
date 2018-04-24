@@ -40,15 +40,12 @@ var yoshi = {
 
 var characters = [mario, luigi, peach, yoshi];
 
-console.log(characters.image);
-console.log(mario.healthPoints);
-console.log(yoshi);
-
 $("#start-button").on("click", function(){
     for (var i = 0; i < characters.length; i++) {
-    $("#charDiv").append('<img src=assets/images/' + yoshi + '.png' + '/>');
-    console.log(characters.image);
+    $("#charDiv").append('<img src=' + characters[i].image + '>');
+    $("#charDiv").addClass("floatChar");
 };
+
     // $("#charDiv").append('<img src="assets/images/mario.png"/>');
     // $("#charDiv").('<img src="'+ mario.image + '" class="image"')
     // $("#charDiv").append("hi!");
