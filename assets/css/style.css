@@ -1,4 +1,21 @@
+.container {
+    text-align: center;
+    align-content: center;
+    clear: both;
+}
+
 img {
-    width: 200px;
+    width: 150px;
+}
+
+.ppls {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    max-width: 200px;
     float: left;
 }
+
+/* .charAllClass {
+    float: left;
+} */
